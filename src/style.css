@@ -12,9 +12,13 @@ body {
 }
 
 .content-grid-start {
-    display: grid;
+    display: none;
     margin: 30px;
-    border: 3px solid black;
+    width: 330px;
+    height: 338px;
+    margin: 0;
+    padding: 20px 31px;
+    border-radius: 30px;
     grid-template-rows: 10px 1fr 45px 84px 72px 50px;
     grid-template-areas:
         "."
@@ -23,11 +27,6 @@ body {
         "description"
         "numberss"
         "submit";
-    width: 330px;
-    height: 338px;
-    margin: 0;
-    padding: 20px 31px;
-    border-radius: 30px;
     background-color: hsl(213, 19%, 18%);
 }
 
@@ -175,5 +174,39 @@ body {
 }
 
 .content-grid-end {
-    display: none;
+    display: grid;
+    margin: 30px;
+    width: 330px;
+    height: 338px;
+    margin: 0;
+    padding: 20px 31px;
+    border-radius: 30px;
+    background-color: hsl(213, 19%, 18%);
+    align-items: center;
+    justify-items: center;
+}
+
+.selected {
+    font-size: 1rem;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 21%);
+    text-align: end;
+    width: 200px;
+    height: 15px;
+    padding: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+
+}
+
+.thank-you {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: hsl(0, 0%, 100%)
+}
+
+.thank-you-message {
+    text-align: center;
 }
