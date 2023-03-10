@@ -12,7 +12,7 @@ body {
 }
 
 .content-grid-start {
-    display: none;
+    display: grid;
     margin: 30px;
     width: 330px;
     height: 338px;
@@ -64,7 +64,7 @@ body {
     grid-area: numberss;
 }
 
-.one {
+#one {
     grid-area: one;
     height: 46px;
     width: 46px;
@@ -77,12 +77,12 @@ body {
     color: hsl(217, 12%, 63%)
 }
 
-.one:active {
+#one:active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.two {
+#two {
     grid-area: two;
     height: 46px;
     width: 46px;
@@ -95,12 +95,12 @@ body {
     color: hsl(217, 12%, 63%)
 }
 
-.two:active {
+#two:active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.three {
+#three {
     grid-area: three;
     height: 46px;
     width: 46px;
@@ -113,12 +113,12 @@ body {
     color: hsl(217, 12%, 63%)
 }
 
-.three:active {
+#three:active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.four {
+#four {
     grid-area: four;
     height: 46px;
     width: 46px;
@@ -131,12 +131,12 @@ body {
     color: hsl(217, 12%, 63%)
 }
 
-.four:active {
+#four:active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.five {
+#five {
     grid-area: five;
     height: 46px;
     width: 46px;
@@ -149,7 +149,7 @@ body {
     color: hsl(217, 12%, 63%);
 }
 
-.five:active {
+#five:active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
@@ -201,7 +201,7 @@ body {
 
     color: hsl(25, 97%, 53%);
     background-color: hsl(213, 19%, 21%);
-    text-align: end;
+    text-align: center;
     width: 200px;
     height: 15px;
     padding: 8px;
