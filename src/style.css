@@ -175,19 +175,30 @@ body {
 
 .content-grid-end {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 35px 60px 82px;
+    grid-template-areas:
+        "ilustration"
+        "selected"
+        "thank-you"
+        "thank-you-message";
     margin: 30px;
-    width: 330px;
+    width: 340px;
     height: 338px;
     margin: 0;
-    padding: 20px 31px;
+    padding: 20px 30px;
     border-radius: 30px;
     background-color: hsl(213, 19%, 18%);
     align-items: center;
     justify-items: center;
 }
 
+.thank-you-ilustration{
+    grid-area: ilustration;
+}
+
 .selected {
-    font-size: 1rem;
+
     color: hsl(25, 97%, 53%);
     background-color: hsl(213, 19%, 21%);
     text-align: end;
@@ -198,15 +209,19 @@ body {
     justify-content: center;
     align-content: center;
     border-radius: 15px;
-
+    grid-area: selected;
 }
 
 .thank-you {
+    margin-top: 30px;;
     font-weight: 700;
     font-size: 1.75rem;
-    color: hsl(0, 0%, 100%)
+    color: hsl(0, 0%, 100%);
+    grid-area: thank-you;
 }
 
 .thank-you-message {
     text-align: center;
+    margin-top: 0;
+    grid-area: thank-you-message;
 }
