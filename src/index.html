@@ -29,7 +29,7 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="content-grid-start">
+  <div class="content-grid-start" id="start">
     <div class="star">
       <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -48,20 +48,20 @@
     </div>
 
     <div class="numbers">
-      <a id="one" href="" onclick="rate(1)">1</a>
-      <a id="two" href="" onclick="rate(2)">2</a>
-      <a id="three" href="" onclick="rate(3)">3</a>
-      <a id="four" href="" onclick="rate(4)">4</a>
-      <a id="five" href="" onclick="rate(5)">5</a>
+      <a id="one" href="#" onclick="rate(this)">1</a>
+      <a id="two" href="#" onclick="rate(this)">2</a>
+      <a id="three" href="#" onclick="rate(this)">3</a>
+      <a id="four" href="#" onclick="rate(this)">4</a>
+      <a id="five" href="#" onclick="rate(this)">5</a>
     </div>
 
-    <a class="submit" href="" onclik="submitAns()">
+    <a class="submit" href="#" onclick="sub()">
       SUBMIT
     </a>
   </div>
   <!-- Rating state end -->
 
-  <div class="content-grid-end">
+  <div class="content-grid-end" id="end">
     <!-- Thank you state start -->
     <div class="thank-you-ilustration">
       <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@
     </div>
 
     <div class="selected">
-      You selected <span id="rating"></span> out of 5
+      You selected&nbsp<span id="rating"></span>&nbspout of 5
     </div>
 
     <div class="thank-you">
@@ -120,7 +120,7 @@
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Rchanis">Raúl Fernandez</a>.
   </div>
   <script src="main.js"></script>
 </body>

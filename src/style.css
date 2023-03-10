@@ -6,7 +6,6 @@ body {
     align-content: center;
     min-width: 100vh;
     min-height: 100vh;
-
     background-color: hsl(216, 12%, 8%);
     color: hsl(217, 12%, 63%);
 }
@@ -34,14 +33,11 @@ body {
     display: flex;
     height: 44px;
     width: 44px;
-
     border-radius: 100%;
     align-items: center;
     justify-content: center;
     grid-area: star;
-
     background-color: hsl(213, 19%, 21%);
-
 }
 
 .title {
@@ -64,80 +60,7 @@ body {
     grid-area: numberss;
 }
 
-#one {
-    grid-area: one;
-    height: 46px;
-    width: 46px;
-    text-decoration: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(213, 19%, 21%);
-    color: hsl(217, 12%, 63%)
-}
-
-#one:active {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-}
-
-#two {
-    grid-area: two;
-    height: 46px;
-    width: 46px;
-    text-decoration: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(213, 19%, 21%);
-    color: hsl(217, 12%, 63%)
-}
-
-#two:active {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-}
-
-#three {
-    grid-area: three;
-    height: 46px;
-    width: 46px;
-    text-decoration: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(213, 19%, 21%);
-    color: hsl(217, 12%, 63%)
-}
-
-#three:active {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-}
-
-#four {
-    grid-area: four;
-    height: 46px;
-    width: 46px;
-    text-decoration: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(213, 19%, 21%);
-    color: hsl(217, 12%, 63%)
-}
-
-#four:active {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-}
-
-#five {
-    grid-area: five;
+.numbers a {
     height: 46px;
     width: 46px;
     text-decoration: none;
@@ -149,10 +72,16 @@ body {
     color: hsl(217, 12%, 63%);
 }
 
-#five:active {
+.numbers a:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.numbers a:active {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
+
 
 .submit {
     text-decoration: none;
@@ -174,7 +103,7 @@ body {
 }
 
 .content-grid-end {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 35px 60px 82px;
     grid-template-areas:
@@ -193,27 +122,24 @@ body {
     justify-items: center;
 }
 
-.thank-you-ilustration{
+.thank-you-ilustration {
     grid-area: ilustration;
 }
 
 .selected {
-
     color: hsl(25, 97%, 53%);
     background-color: hsl(213, 19%, 21%);
-    text-align: center;
     width: 200px;
     height: 15px;
     padding: 8px;
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-content: center;
     border-radius: 15px;
     grid-area: selected;
 }
 
 .thank-you {
-    margin-top: 30px;;
+    margin-top: 30px;
     font-weight: 700;
     font-size: 1.75rem;
     color: hsl(0, 0%, 100%);
