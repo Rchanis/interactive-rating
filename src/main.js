@@ -30,9 +30,14 @@ function rate(ele) {
 }
 
 function sub() {
-    document.getElementById("rating").innerHTML = rating;
-    document.getElementById("end").style.display = "grid";
-    document.getElementById("start").style.display = "none";
+    if (first) {
+
+    }
+    else {
+        document.getElementById("rating").innerHTML = rating;
+        document.getElementById("end").style.display = "grid";
+        document.getElementById("start").style.display = "none";
+    }
 
 }
 
