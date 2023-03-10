@@ -1,1 +1,1 @@
-# interactive-rating-
+# interactive-rating
